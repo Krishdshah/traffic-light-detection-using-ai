@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Traffic Light Detection</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; background-color: #282c34; color: white; }
+        h1 { margin-top: 20px; }
+        .video-container {
+            margin: 20px auto;
+            border: 5px solid #61dafb;
+            width: 640px; /* Or your preferred size */
+            height: 480px;
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Real-Time Traffic Light Detection</h1>
+    <div class="video-container">
+        <img src="{{ url_for('video_feed') }}" width="640" height="480">
+    </div>
+</body>
+</html>
